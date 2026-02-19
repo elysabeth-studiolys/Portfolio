@@ -6,23 +6,22 @@ import imgREACT from "../assets/techno/react.png"
 import imgJS from "../assets/techno/js.png"
 import imgNODE from "../assets/techno/node-js.png"
 import imgTAILWIND from "../assets/techno/tailwind.png"
-import imgGIT from "../assets/techno/next-js.webp"
 import imgTYPESCRIPT from "../assets/techno/typescript.svg"
 import imgNEXTJS from "../assets/techno/next-js.webp"
-import imgPRISMA from "../assets/techno/prisma.webp"
+import imgGIT from "../assets/techno/github.png"
+import imgFLUTTER from "../assets/techno/flutter.webp"
+
 
 
 
 const skills = [
   { id: 1, name: "HTML", image: imgHTML },
   { id: 2, name: "CSS", image: imgCSS },
-  { id: 3, name: "JavaScript", image: imgJS },
   { id: 4, name: "React", image: imgREACT },
-  { id: 5, name: "Node.js", image: imgNODE },
-  { id: 6, name: "Tailwind CSS", image: imgTAILWIND },
-  { id: 7, name: "Git", image: imgGIT },
   { id: 8, name: "TypeScript", image: imgTYPESCRIPT },
-  { id: 9, name: "Next.js", image: imgNEXTJS }
+  { id: 7, name: "Git", image: imgGIT },
+  { id: 3, name: "Flutter", image: imgFLUTTER },
+ 
 ]
 
 const experiences = [
@@ -31,8 +30,8 @@ const experiences = [
     role: "Comunication assistant",
     company: "MissionDigitale",
     period: "Sept 2025 - Present",
-    description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence."],
-    image: imgPRISMA
+    description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence.", "Developed custom JavaScript pricing and estimation tools for construction and real estate projects."],
+    image: imgGIT
   },
   {
     id: 2,
@@ -40,7 +39,7 @@ const experiences = [
     company: "MissionDigitale",
     period: "Sept 2025 - Present",
     description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence."],
-    image: imgPRISMA
+    image: imgGIT
   },
   {
     id: 3,
@@ -48,13 +47,13 @@ const experiences = [
     company: "MissionDigitale",
     period: "Sept 2025 - Present",
     description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence."],
-    image: imgPRISMA
+    image: imgGIT
   }
 ]
 
 const Experience = () => {
   return (
-    <div id="Experiences">
+    <div id="Experiences" className="flex flex-col gap-20 mb-50">
       <Title title="Experiences" />
       <div className="flex flex-col-reverse md:flex-row justify center items-center">
         <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 md:mt-0">

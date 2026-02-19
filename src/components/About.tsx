@@ -29,20 +29,26 @@ const aboutSections = [
 
 const About = () => {
   return (
-    <div className="bg-base-300 p-10 mb-10 md:mb-32"  id="About">
+    <div className="bg-base-300 p-10 mb-10 md:mb-32 flex flex-col gap-30"  id="About">
       <Title title="About Me" />
-      <div className="md:h-screen flex justify-center items-center ">
 
-        <div className="hidden  md:block">
-            <img src={img} alt="" className="w-150 object-cover rounded-xl"
-                
-                />
-        </div>
+      <div className="flex justify-center items-center gap-5">
+        <img src={img} alt="" className="w-50 object-cover rounded-xl"/>
+        <p className="w-1/3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+        </p>
+      </div>
+
+      <div className=" flex justify-center items-center mb-20">
+
+  
         
         <div className="md:ml-4 space-y-4">
             {aboutSections.map((section) => (
                 <div key={section.id} className="flex flex-col md:flex-row items-center bg-base-100
-                p-5 rounded-xl md:w-96 shadow-xl gradient-brand-border">
+                p-5 rounded-xl  shadow-xl gradient-brand-border">
 
                     <div className="mb-2 md:mb-0">
                         {section.icon}

@@ -41,7 +41,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="mt-10" id="Projects">
+    <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
       <Title title="Last Projects" />
       <div className="grid md: grid-cols-3 gap-4">
         {projects.map((project) => (
