@@ -1,5 +1,6 @@
 import Title from "./Title"
 import img from'../assets/portrait.webp'
+import illustration from '../assets/illustration.png'
 import { CodeXml, Figma, Smartphone } from "lucide-react"
 
 const aboutSections = [
@@ -28,12 +29,12 @@ const aboutSections = [
 
 const About = () => {
   return (
-    <div className="bg-base-300 p-10 mb-10 md:mb-32" id="About">
+    <div className="bg-base-300 p-10 mb-10 md:mb-32"  id="About">
       <Title title="About Me" />
       <div className="md:h-screen flex justify-center items-center ">
 
         <div className="hidden  md:block">
-            <img src={img} alt="" className="w-130 object-cover rounded-xl"
+            <img src={img} alt="" className="w-150 object-cover rounded-xl"
                 
                 />
         </div>
@@ -41,7 +42,7 @@ const About = () => {
         <div className="md:ml-4 space-y-4">
             {aboutSections.map((section) => (
                 <div key={section.id} className="flex flex-col md:flex-row items-center bg-base-100
-                p-5 rounded-xl md:w-96 shadow-xl">
+                p-5 rounded-xl md:w-96 shadow-xl gradient-brand-border">
 
                     <div className="mb-2 md:mb-0">
                         {section.icon}

@@ -3,8 +3,8 @@ interface TitleProps{
 }
 const Title = ({title} : TitleProps) => {
   return (
-    <div>
-        <h1 className="uppercase font-bold mb-5 text-center text-3xl">
+    <div className="flex items-center justify-center">
+        <h1 className="gradient-brand-text uppercase font-bold mb-5 text-4xl md:text-5xl ">
             {title}
         </h1>
     </div>

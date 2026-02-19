@@ -36,33 +36,6 @@ const projects = [
         demoLink: '#',
         repoLink: '#',
         image: img3,
-    },
-    {
-        id: 4,
-        title: "Wellbeing mobile app",
-        description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
-        repoLink: '#',
-        image: img4,
-    },
-    {
-        id: 5,
-        title: "Wellbeing mobile app",
-        description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
-        repoLink: '#',
-        image: img5,
-    },
-    {
-        id: 6,
-        title: "Wellbeing mobile app",
-        description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
-        repoLink: '#',
-        image: img6,
     }
 ]
 

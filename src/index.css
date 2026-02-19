@@ -1,8 +1,71 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, sunset;
+  themes: light --default, mytheme --prefersdark, sunset;
 };
 html {
   scroll-behavior: smooth;
+}
+
+@utility gradient-brand {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));
+};
+
+@utility gradient-brand-text {
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip : text;
+}
+
+@utility grandient-brand-border
+{
+  border: 2px solid transparent;
+  background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box,
+              linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent)) border-box;
+
+}
+
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true; /* set as default */
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-base-100: oklch(0.235 0 129.63);
+  --color-base-200: oklch(0.2891 0 0);
+  --color-base-300: oklch(0.2891 0 0);
+  --color-base-content: oklch(0.9761 0 0);
+  --color-primary: oklch(0.679 0.211 17.54);
+  --color-primary-content: oklch(98% 0.01 240);
+  --color-secondary: oklch(0.686 0.247 349.29);
+  --color-secondary-content: oklch(98% 0.01 200);
+  --color-accent: oklch(0.7981 0.1468 62.7);
+  --color-accent-content: oklch(98% 0.01 160);
+  --color-neutral: oklch(50% 0.05 240);
+  --color-neutral-content: oklch(98% 0.01 240);
+  --color-info: oklch(70% 0.2 220);
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: oklch(65% 0.25 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(80% 0.25 80);
+  --color-warning-content: oklch(20% 0.05 80);
+  --color-error: oklch(65% 0.3 30);
+  --color-error-content: oklch(98% 0.01 30);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
 }

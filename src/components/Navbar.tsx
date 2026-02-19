@@ -1,25 +1,17 @@
 import { Container } from "lucide-react"
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
     return (
         <div className="flex justify-center md:justify-between items-center p-4">
             <a href='#'
-                className="flex items-center font-bold text-3xl md:text-xl">
+                className="flex items-center">
 
-                <Container className="mr-2" />
-                ELYSABETH
-                <span className="text-primary">DEV</span>
+                <img src={logo} className="w-20"/>
             </a>
 
             <ul
                 className="hidden md:flex space-x-4">
-                <li>
-                    <a href="#Home"
-                        className="btn btn-sm btn-ghost"
-                    >
-                        Home
-                    </a>
-                </li>
                 <li>
                     <a href="#About"
                         className="btn btn-sm btn-ghost"
