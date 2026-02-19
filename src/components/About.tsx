@@ -1,6 +1,5 @@
 import Title from "./Title"
 import img from'../assets/portrait.webp'
-import illustration from '../assets/illustration.png'
 import { CodeXml, Figma, Smartphone } from "lucide-react"
 
 const aboutSections = [

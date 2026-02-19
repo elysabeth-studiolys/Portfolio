@@ -1,6 +1,5 @@
 import { FileText } from "lucide-react"
 import { Code } from "lucide-react"
-import img from'../assets/portrait.webp'
 import illustration from '../assets/illustration.png'
 
 
