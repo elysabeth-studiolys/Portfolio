@@ -1,7 +1,5 @@
 import Title from "./Title"
 
-import img2 from '../assets/projects/2.png';
-import img3 from '../assets/projects/3.png';
 import app from '../assets/projects/app.jpg'
 
 import { Github, Video } from "lucide-react";
