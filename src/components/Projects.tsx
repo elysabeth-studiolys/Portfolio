@@ -21,7 +21,7 @@ const Projects = () => {
   return (
     <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
       <Title title="Last Projects" />
-      <div className="grid md: grid-cols-3 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         {projects.map((project) => (
             <div key={project.id}className="bg-base-300 p-5 h-fit rounded-xl shadow-lg">
                 <img src={project.image} alt={project.title} className="w-full rounded-xl h-56 object-cover" />
