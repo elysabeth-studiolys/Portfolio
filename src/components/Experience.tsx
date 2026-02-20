@@ -30,21 +30,22 @@ const experiences = [
     image: imgGIT
   },
   {
-    id: 2,
-    role: "Comunication assistant",
-    company: "MissionDigitale",
-    period: "Sept 2025 - Present",
-    description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence."],
+    id: 3,
+    role: "Freelancer",
+    company: "Studiolys",
+    period: "Octobre 2025 - Present",
+    description: ["Designed and developed custom websites for freelancers and small businesses.", "Built responsive, user-centered interfaces (UX/UI).","Developed cross-platform mobile applications (iOS & Android)","Created and implemented visual identities for digital products"],
     image: imgGIT
   },
   {
-    id: 3,
-    role: "Comunication assistant",
-    company: "MissionDigitale",
-    period: "Sept 2025 - Present",
-    description: ["Created some figma templates for the organization.", "Maintained the organization's website and social media presence."],
+    id: 2,
+    role: "Graphic & webdesigner",
+    company: "La Folie des Senteurs",
+    period: "2024-2025",
+    description: ["Created custom product illustrations aligned with brand identity and marketing strategy.", "Redesigned and optimized the online store webpage to improve user experience and visual consistency.","Led SEO restructuring to enhance search engine visibility and organic traffic"],
     image: imgGIT
-  }
+  },
+  
 ]
 
 const Experience = () => {
@@ -69,7 +70,6 @@ const Experience = () => {
             <div key={experience.id} className="flex flex-col bg-base-200  p-5 rounded-xl shadow-lg">
 
               <div className="flex items-center">
-                <img src={experience.image} alt={experience.company} className="object-cover h-1_ w-10" />
                 <div className="ml-4">
                   <h1 className="text-xl text-primary font-bold">
                     {experience.role} , {experience.company}

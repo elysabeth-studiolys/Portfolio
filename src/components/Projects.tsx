@@ -1,8 +1,8 @@
 import Title from "./Title"
 
-import img1 from '../assets/projects/1.png';
 import img2 from '../assets/projects/2.png';
 import img3 from '../assets/projects/3.png';
+import app from '../assets/projects/app.jpg'
 
 import { Github, Video } from "lucide-react";
 
@@ -14,26 +14,8 @@ const projects = [
         description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
         technologies: ["Flutter", "Firebase", "Dart"],
         demoLink: '#',
-        repoLink: '#',
-        image: img1,
-    },
-    {
-        id: 2,
-        title: "Wellbeing mobile app",
-        description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
-        repoLink: '#',
-        image: img2,
-    },
-    {
-        id: 3,
-        title: "Wellbeing mobile app",
-        description: "A mobile application designed to help users track and improve their mental health and overall wellbeing.",
-        technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
-        repoLink: '#',
-        image: img3,
+        repoLink: 'https://github.com/elysabeth-studiolys/studiolys-app',
+        image: app,
     }
 ]
 
@@ -60,12 +42,12 @@ const Projects = () => {
                     ))}
                 </div>
                 <div className="flex gap-2">
-                    <a className="btn btn-primary w-2/3" href={project.demoLink}>
+                    <a className="hidden btn btn-primary w-2/3" href={project.demoLink}>
                         <Video className="w-4" />
                         Demo
                         
                     </a>
-                    <a className="btn btn-soft btn-primary w-1/3" href={project.repoLink}>
+                    <a className="btn btn-soft btn-primary w-2/3" href={project.repoLink}>
                         <Github className="w-4" />
                         
                         

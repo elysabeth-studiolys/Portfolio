@@ -1,6 +1,7 @@
 import { FileText } from "lucide-react"
 import { Code } from "lucide-react"
 import illustration from '../assets/illustration.png'
+import cv from '../assets/CV 2026.pdf'
 
 
 const Home = () => {
@@ -21,11 +22,11 @@ const Home = () => {
                     <br />web and mobile development
                 </p>
                 <div className="flex space-x-4">
-                    <a href="#" className="btn gradient-brand w-fit">
+                    <a href="#Projects" className="btn gradient-brand w-fit">
                         <Code className="w-5 h-5"/>
                         Go to my projects
                     </a>
-                    <a href="#" className="btn btn-soft gradient-brand-text w-fit">
+                    <a href={cv} download className="btn btn-soft gradient-brand-text w-fit">
                         <FileText  />
                         Download my CV
                     </a>

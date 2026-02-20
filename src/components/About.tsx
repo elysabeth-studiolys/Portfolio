@@ -31,7 +31,7 @@ const About = () => {
     <div className="bg-base-300 p-10 mb-10 md:mb-32 flex flex-col gap-30"  id="About">
       <Title title="About Me" />
 
-      <div className="flex justify-center items-center gap-5">
+      <div className="hidden flex justify-center items-center gap-5">
         <img src={img} alt="" className="w-50 object-cover rounded-xl"/>
         <p className="w-1/3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
