@@ -22,10 +22,10 @@ const Footer = () => {
                     <a href="" target="_blank" rel='noopener noreferrer'>
                         <img className='w-8' src={iconWeb}></img>
                     </a>
-                    <a href="" target="_blank" rel='noopener noreferrer'>
+                    <a href="https://github.com/elysabeth-studiolys/" target="_blank" rel='noopener noreferrer'>
                         <img className='w-8' src={iconGit}></img>
                     </a>
-                    <a href="" target="_blank" rel='noopener noreferrer'>
+                    <a href="https://www.linkedin.com/in/elysabeth-patrigot-a5034a337/" target="_blank" rel='noopener noreferrer'>
                         <img className='w-8' src={iconLinkedin}></img>
                     </a>
                 </div>
