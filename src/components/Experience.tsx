@@ -52,7 +52,7 @@ const Experience = () => {
   return (
     <div id="Experiences" className="flex flex-col gap-20 mb-50">
       <Title title="Experiences" />
-      <div className="flex flex-col-reverse md:flex-row justify center items-center">
+      <div className="flex flex-col-reverse md:flex-row justify center items-center gap-5">
         <div className="flex flex-wrap gap-4 justify-center items-center md:w-1/3 md:mt-0">
           {skills.map((skill) => (
             <div key={skill.id} className="flex justify-center items-center flex-col">
@@ -71,7 +71,7 @@ const Experience = () => {
 
               <div className="flex items-center">
                 <div className="ml-4">
-                  <h1 className="text-xl text-primary font-bold">
+                  <h1 className="text-xl text-accent font-bold">
                     {experience.role} , {experience.company}
                   </h1>
                   <span className="text-sm">{experience.period}</span>

@@ -13,21 +13,21 @@ const Navbar = () => {
                 className="hidden md:flex space-x-4">
                 <li>
                     <a href="#About"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-soft btn-accent"
                     >
                         About me
                     </a>
                 </li>
                 <li>
                     <a href="#Experiences"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-soft btn-accent"
                     >
                         Experiences
                     </a>
                 </li>
                 <li>
                     <a href="#Projects"
-                        className="btn btn-sm btn-ghost"
+                        className="btn btn-soft btn-accent"
                     >
                         Last projects
                     </a>
