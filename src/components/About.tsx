@@ -1,6 +1,6 @@
 import Title from "./Title"
 import back from '../assets/backline.png'
-import { ArrowUpRight, CodeXml, Figma, Smartphone } from "lucide-react"
+import { CodeXml, Figma, Smartphone } from "lucide-react"
 
 const aboutSections = [
     {
