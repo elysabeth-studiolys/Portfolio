@@ -1,41 +1,76 @@
-import logo from '../assets/logo.png'
+import { useState } from 'react'
+import { motion, useMotionValueEvent, useScroll } from "motion/react"
+
+import logo from '../assets/logo_round_.png'
+
+
 
 const Navbar = () => {
+
+    const { scrollY } = useScroll()
+    const [hidden, setHidden] = useState(false)
+
+    useMotionValueEvent(scrollY, "change", (current) => {
+        const previous = scrollY.getPrevious() ?? 0
+        if (current > previous && current > 150) {
+            setHidden(true)
+        } else {
+            setHidden(false)
+        }
+    })
+
+
     return (
-        <div className="flex justify-center md:justify-between items-center p-4">
-            <a href='#'
-                className="flex items-center">
+        <motion.nav 
+        className="z-99 flex backdrop-blur-md fixed left-auto top-5 w-2/3 items-center p-2 border rounded-full"
+        animate={{ 
+            y: hidden ? -140 : 0,
+            opacity: hidden ? 0 : 1,
+             }} 
+             transition={{ duration: 0.3, ease: "easeInOut" }}
+             >
 
-                <img src={logo} className="w-20"/>
-            </a>
+                <a href='#'
+                    className="flex items-center">
 
-            <ul
-                className="hidden md:flex space-x-4">
-                <li>
-                    <a href="#About"
-                        className="btn btn-soft btn-accent"
-                    >
-                        About me
-                    </a>
-                </li>
-                <li>
-                    <a href="#Experiences"
-                        className="btn btn-soft btn-accent"
-                    >
-                        Experiences
-                    </a>
-                </li>
-                <li>
-                    <a href="#Projects"
-                        className="btn btn-soft btn-accent"
-                    >
-                        Last projects
-                    </a>
-                </li>
+                    <img src={logo} className="w-15" />
+                </a>
+
+                <ul
+                    className="hidden md:flex  items-center justify-between w-full ml-10 gap-5 mr-2 ">
+                    <li>
+                        <a href="#About"
+                            className="btn-default"
+                        >
+                            À PROPOS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Experiences"
+                            className="btn-default"
+                        >
+                            EXPÉRIENCES
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Projects"
+                            className="btn-default"
+                        >
+                            DERNIERS PROJETS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Contact"
+                            className="btn-gradient"
+                        >
+                            CONTACT
+                        </a>
+                    </li>
 
 
-            </ul>
-        </div>
+                </ul>
+
+        </motion.nav>
     )
 }
 

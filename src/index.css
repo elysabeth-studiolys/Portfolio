@@ -7,6 +7,56 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+p{
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+body {
+  font-family: 'Albert Sans';
+  font-size: 1rem;
+}
+.btn-default {
+  border:none;
+  background-color: transparent;
+  padding: 1rem 1rem;
+  border-radius: 50px;
+}
+.btn-default:hover {
+  background-color: #3C3C3C;
+
+}
+.card-glass {
+  @apply backdrop-blur border border-white/20  bg-white/5 p-5 rounded-xl  shadow-xl
+}
+
+.card-glass:hover{
+  @apply border-white/40 bg-white/10 scale-110 transition-transform duration-300
+}
+.btn-gradient {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 1px solid transparent;
+}
+.btn-gradient:hover {
+  border: 1px solid white;
+}
+.btn-gradient-border{
+  border: 3px solid transparent;
+  background: linear-gradient(var(--color-base-content), var(--color-base-content)) padding-box,
+              linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent)) border-box;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  color: #000
+}
 @utility gradient-brand {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));
 };
@@ -18,7 +68,14 @@ html {
   background-clip : text;
 }
 
-@utility grandient-brand-border
+@utility gradient-brand-border
+{
+  border: 3px solid transparent;
+  background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box,
+              linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent)) border-box;
+
+}
+@utility gradient-border-nav
 {
   border: 2px solid transparent;
   background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box,

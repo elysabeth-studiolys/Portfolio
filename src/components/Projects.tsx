@@ -46,9 +46,9 @@ const Projects = () => {
             <div key={project.id}className="bg-base-300 p-5 h-fit rounded-xl shadow-lg">
                 <img src={project.image} alt={project.title} className="w-full rounded-xl h-56 object-cover" />
                 <div>
-                    <h1 className="my-2 font-bold">
+                    <h2 className="my-2 font-bold">
                         {project.title}
-                    </h1>
+                    </h2>
                     <p className="text-sm">{project.description}</p>
                 </div>
 
