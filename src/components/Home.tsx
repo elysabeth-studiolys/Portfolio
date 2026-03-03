@@ -5,11 +5,7 @@ import cv from '../assets/CV 2026.pdf'
 
 import { motion } from "motion/react"
 
-const transition = {
-    duration: 0.8,
-    delay: 0.2,
-    ease: [0, 0.71, 0.2, 1.01],
-}
+
 
 
 const Home = () => {

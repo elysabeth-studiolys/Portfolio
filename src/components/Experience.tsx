@@ -7,7 +7,6 @@ import imgTYPESCRIPT from "../assets/techno/typescript.svg"
 import imgGIT from "../assets/techno/github.png"
 import imgFLUTTER from "../assets/techno/flutter.webp"
 
-import back from "../assets/circleback.png"
 
 
 

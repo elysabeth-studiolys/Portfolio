@@ -1,5 +1,4 @@
 import Title from "./Title"
-import img from '../assets/portrait.webp'
 import back from '../assets/backline.png'
 import { ArrowUpRight, CodeXml, Figma, Smartphone } from "lucide-react"
 
