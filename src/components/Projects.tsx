@@ -50,7 +50,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
-      <Title title="Last Projects" />
+      <Title title="Derniers Projets" />
       <div className="grid md:grid-cols-3 gap-12">
         {projects.map((project) => (
             <div key={project.id}className="card-glass h-full rounded-xl shadow-lg">
