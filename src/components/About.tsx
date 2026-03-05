@@ -33,7 +33,7 @@ const About = () => {
             <img src={back} alt="" className="absolute top-95 left-0 w-full h-full object-cover  -z-10" />
                 <Title title="À propos de moi" />
 
-                <p className="mx-20">
+                <p className="mx-20 text-xl">
                     Développeuse web & mobile en formation, je transforme des idées en applications concrètes. <br />
                     Curieuse, rigoureuse et créative, j’aime comprendre en profondeur, structurer proprement et concevoir des interfaces pensées pour l’humain.
                     <br />Chaque projet est pour moi un terrain d’apprentissage et d’amélioration continue.

@@ -13,10 +13,7 @@ h1 {
   line-height: 4rem;
 }
 
-p{
-  font-size: 1rem;
-  line-height: 1.75rem;
-}
+
 
 body {
   font-family: 'Albert Sans';
@@ -36,8 +33,17 @@ body {
   @apply backdrop-blur border border-white/20  bg-white/5 p-5 rounded-xl  shadow-xl
 }
 
+
 .card-glass:hover{
   @apply border-white/40 bg-white/10 scale-110 transition-transform duration-300
+}
+
+.image-project {
+  @apply rounded-4xl max-h-[70vh] backdrop-blur border border-white/20  bg-white/5 p-5 rounded-xl  shadow-xl
+
+}
+.image-project:hover {
+  @apply scale-110 transition-transform duration-300
 }
 .btn-gradient {
     background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));
@@ -51,11 +57,20 @@ body {
 }
 .btn-gradient-border{
   border: 3px solid transparent;
-  background: linear-gradient(var(--color-base-content), var(--color-base-content)) padding-box,
+  background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box,
               linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent)) border-box;
   border-radius: 50px;
   padding: 0.5rem 1rem;
-  color: #000
+  font-size: 1.2rem;
+
+}
+.btn-gradient-border-mobile{
+  border: 3px solid transparent;
+  background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box,
+              linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent)) border-box;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+
 }
 @utility gradient-brand {
   background: linear-gradient(135deg, var(--color-secondary), var(--color-primary), var(--color-accent));

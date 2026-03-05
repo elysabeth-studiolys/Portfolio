@@ -25,7 +25,7 @@ const Home = () => {
                     </span> 
                 </h1>
 
-                <p className="my-4 text-md text-center md:text-left">
+                <p className="my-4 text-xl text-center md:text-left">
                     Développeuse web et mobile junior,
                     <br /> à la recherche de mon <span className="font-bold text-accent">alternance</span> pour
                     <br />l'année 2026-2027

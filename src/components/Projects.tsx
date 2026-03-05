@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import Title from "./Title"
 
 import app from '../assets/projects/app.jpg'
@@ -14,7 +16,7 @@ const projects = [
         title: "Application mobile Bien-être",
         description: "Application mobile conçue pour aider les utilisateurs à suivre et améliorer leur santé mentale ainsi que leur bien-être global.",
         technologies: ["Flutter", "Firebase", "Dart"],
-        demoLink: '#',
+        slug: 'serenity',
         repoLink: 'https://github.com/elysabeth-studiolys/studiolys-app',
         image: app,
     },
@@ -23,8 +25,8 @@ const projects = [
         title: "Site web de freelance",
         description: "Site web de freelance conçu pour présenter les services & obtenir des clients.",
         technologies: ["React", "Tailwind CSS", "TypeScript"],
-        demoLink: '#',
-        repoLink: 'https://github.com/elysabeth-studiolys/studiolys-app',
+        slug: 'studio-lys',
+        repoLink: 'https://github.com/elysabeth-studiolys/studiolys',
         image: studiolys,
     },
     {
@@ -32,7 +34,7 @@ const projects = [
         title: "Platformer 2D",
         description: "Un plate-former 2D construit autour de mécaniques basées sur la température — geler, fondre et surchauffer pour progresser.",
         technologies: ["C#", "Unity"],
-        demoLink: '#',
+        slug: "terminus",
         repoLink: 'https://github.com/elysabeth-studiolys/GameJam-Terminus',
         image: gamejam,
     },
@@ -41,7 +43,7 @@ const projects = [
         title: "From CSS to SCSS",
         description: "Projet scolaire développé dans le cadre de l'apprentissage des fondamentaux de SCSS et de l'architecture de style.",
         technologies: ["HTML", "SCSS", "Dart Sass"],
-        demoLink: '#',
+        slug: "css-to-scss",
         repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
         image: scss,
     }
@@ -49,6 +51,7 @@ const projects = [
 
 const Projects = () => {
   return (
+    
     <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
       <Title title="Derniers Projets" />
       <div className="grid md:grid-cols-3 gap-12">
@@ -70,11 +73,11 @@ const Projects = () => {
                     ))}
                 </div>
                 <div className="flex gap-2">
-                    <a className="btn  btn-accent w-1/3" href={project.demoLink}>
+                    <Link className="btn  btn-accent w-1/3" to={`/projects/${project.slug}`}>
                         <Eye className="w-4" />
                         Voir
                         
-                    </a>
+                    </Link>
                     <a className="btn btn-soft btn-accent  w-2/3" href={project.repoLink}>
                         <Github className="w-4" />
                         GitHub
