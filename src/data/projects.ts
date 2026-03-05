@@ -1,7 +1,5 @@
-import { Database } from "lucide-react"
+import { Database, Gem, Rotate3d, Code, ToggleRight, ListChecks } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
-
-
 
 import studiolys from '../assets/projects/studiolys-format.png'
 import studiolys1 from '../assets/projects/studiolys-1.png'
@@ -45,23 +43,23 @@ export const projects: Project[] =
                 {
                     title: "UI Prenium",
                     description: "UI premium — Glassmorphism, dégradés, navbar hide-on-scroll et animations Framer Motion.",
-                    icon: Database
+                    icon: Gem
 
                 },
                 {
                     title: "Animations Framer Motion",
                     description: "Animations fluides pilotées par Framer Motion, notamment une navbar responsive qui se masque au scroll.",
-                    icon: Database
+                    icon: Rotate3d
                 },
                 {
                     title: "Next.js 14 + TypeScript",
                     description: "App Router, architecture data-driven avec interfaces TypeScript centralisées pour les contenus.",
-                    icon: Database
+                    icon: Code
                 },
                 {
                     title: "Composants interactifs",
                     description: "Formulaire de contact, tarification dynamique, carrousel de témoignages, modals.",
-                    icon: Database
+                    icon: ToggleRight
                 }
             ]
         },
@@ -81,7 +79,7 @@ export const projects: Project[] =
                 {
                     title: "Suivi multi-modules",
                     description: "Modules bien-être, école, maison et projets regroupés dans une seule interface.",
-                    icon: Database
+                    icon: ListChecks
 
                 },
                 {

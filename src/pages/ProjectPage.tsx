@@ -49,7 +49,7 @@ const ProjectPage = () => {
 
                 <img src={project.image[0]} alt="Project image" className="card-glass w-full pointer-events-none" />
                 { project.image.length > 1 && (
-                <div className="flex flex-col gap-8 justify-center">
+                <div className="flex flex-col md:flex-row gap-8 justify-center">
                     <img src={project.image[1]} alt="Project image" className="card-glass  md:w-1/3" />
                     <img src={project.image[2]} alt="Project image" className="card-glass md:w-1/3" />
                     <img src={project.image[3]} alt="Project image" className="card-glass md:w-1/3" />
