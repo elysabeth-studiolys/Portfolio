@@ -2,7 +2,6 @@ import { useParams, Link } from "react-router-dom"
 import { projects } from "../data/projects"
 import Title from "../components/Title"
 
-import Navbar from "../components/Navbar"
 import { Github } from "lucide-react"
 
 
