@@ -18,12 +18,12 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             >
             <div className="flex flex-col fustify-end ">
-                <h1 className=" font-bold text-center md:text-left mt-4 md:mt-0">
+                <span className=" font-bold text-center md:text-left text-5xl mt-4 md:mt-0">
                     Je suis <br /> {" "}
                     <span className="gradient-brand-text">
                         Elysabeth
                     </span> 
-                </h1>
+                </span>
 
                 <p className="my-4 text-xl text-center md:text-left">
                     Développeuse web et mobile junior,
