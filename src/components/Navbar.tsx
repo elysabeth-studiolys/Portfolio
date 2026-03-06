@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <motion.nav 
-        className="z-99 flex backdrop-blur-md fixed left-auto top-5 w-2/3 items-center p-2 border rounded-full"
+        className="hidden z-99 md:flex nav-glass fixed top-5 w-2/3 items-center p-2 text-center"
         animate={{ 
             y: hidden ? -140 : 0,
             opacity: hidden ? 0 : 1,
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </a>
 
                 <ul
-                    className="hidden md:flex  items-center justify-between w-full ml-10 gap-5 mr-2 ">
+                    className=" md:flex  items-center w-full ml-10 gap-5 mr-2">
                     <li>
                         <a href="#About"
                             className="btn-default"

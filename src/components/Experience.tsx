@@ -56,7 +56,7 @@ const Experience = () => {
 
       
       <div className="flex flex-col-reverse justify center items-center gap-20">
-        <div className="flex  gap-4 justify-center items-center md:w-1/3 md:mt-0">
+        <div className="flex md:flex-row grid grid-cols-3 gap-4 justify-center items-center md:w-1/3 md:mt-0">
           {skills.map((skill) => (
             <div key={skill.id} className="flex justify-center items-center flex-col">
               <div className="w-24 h-24 p-2 rounded-full border-2 border-primary">
@@ -68,7 +68,7 @@ const Experience = () => {
 
         </div>
 
-        <div className=" flex flex-row gap-12 space-y-4">
+        <div className=" flex md:flex-row flex-col gap-12 space-y-4">
           {experiences.map((experience) => (
             <div key={experience.id} className="flex w-full flex-col card-glass">
 
