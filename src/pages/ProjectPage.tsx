@@ -3,6 +3,7 @@ import { projects } from "../data/projects"
 import Title from "../components/Title"
 
 import { Github } from "lucide-react"
+import Footer from "../components/Footer"
 
 
 
@@ -65,7 +66,7 @@ const ProjectPage = () => {
                         {project.features.map((feature, index) => {
                             const Icon = feature.icon
                             return (
-                                <div key={index} className="flex flex-col gap-2 p-4 card-glass items-center text-center">
+                                <div key={index} className="flex flex-col gap-2 p-4 card-glass pointer-events-none md:pointer-events-auto items-center text-center">
                                     <Icon size={24} className="text-primary" />
                                     <h3 className="font-semibold">{feature.title}</h3>
                                     <p className="text-sm text-gray-400">{feature.description}</p>
@@ -79,7 +80,7 @@ const ProjectPage = () => {
                     <div className="w-2 h-10 rounded-xl gradient-brand" />
                     <h2 className="text-4xl font-bold">À propos de ce projet</h2>
                 </div>
-                <div className="card-glass p-6">
+                <div className="card-glass pointer-events-none md:pointer-events-auto p-6">
                     {project.longDescription.map((paragraph, index) => (
                         <p key={index} className="p-6">
                             {paragraph}
@@ -97,7 +98,11 @@ const ProjectPage = () => {
                 </Link>
                 </div>
             </div>
+
+            <Footer />
         </section>
+
+
     )
 }
 

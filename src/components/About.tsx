@@ -33,7 +33,7 @@ const About = () => {
             <img src={back} alt="" className="hidden md:flex absolute top-95 left-0 w-full h-full object-cover  -z-10" />
                 <Title title="À propos de moi" />
 
-                <p className="mx-20 md:text-xl">
+                <p className="md:mx-20 md:text-xl">
                     Développeuse web & mobile en formation, je transforme des idées en applications concrètes. <br />
                     Curieuse, rigoureuse et créative, j’aime comprendre en profondeur, structurer proprement et concevoir des interfaces pensées pour l’humain.
                     <br />Chaque projet est pour moi un terrain d’apprentissage et d’amélioration continue.
@@ -43,7 +43,7 @@ const About = () => {
 
                     <div className="flex flex-col md:grid md:grid-cols-3 gap-12 md:ml-4 space-y-4">
                         {aboutSections.map((section) => (
-                            <div key={section.id} className="flex flex-col  items-center card-glass">
+                            <div key={section.id} className="flex flex-col  items-center card-glass pointer-events-none md:pointer-events-auto">
 
 
                                 <div className="md:ml-4 text-center ">

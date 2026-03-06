@@ -56,7 +56,7 @@ const Projects = () => {
       <Title title="Derniers Projets" />
       <div className="grid md:grid-cols-3 gap-12">
         {projects.map((project) => (
-            <div key={project.id}className="card-glass h-full rounded-xl shadow-lg">
+            <div key={project.id}className="card-glass-mobile h-full ">
                 <img src={project.image} alt={project.title} className="w-full rounded-xl h-56 object-cover" />
                 <div>
                     <h2 className="my-2 font-bold">
@@ -72,8 +72,8 @@ const Projects = () => {
                         </span>
                     ))}
                 </div>
-                <div className="flex gap-2">
-                    <Link className="btn  btn-accent w-1/3" to={`/projects/${project.slug}`}>
+                <div className="flex gap-2 ">
+                    <Link className="btn  btn-accent w-1/3 " to={`/projects/${project.slug}`}>
                         <Eye className="w-4" />
                         Voir
                         

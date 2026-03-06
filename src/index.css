@@ -32,11 +32,14 @@ body {
 .card-glass {
   @apply backdrop-blur border border-white/20  bg-white/5 p-5 rounded-xl  shadow-xl
 }
-
-
 .card-glass:hover{
   @apply border-white/40 bg-white/10 scale-110 transition-transform duration-300
 }
+.card-glass-mobile {
+  @apply backdrop-blur border border-white/20  bg-white/5 p-5 rounded-xl  shadow-xl
+}
+
+
 
 .nav-glass {
   @apply backdrop-blur border border-white/20  bg-white/5 p-5 rounded-full  shadow-xl

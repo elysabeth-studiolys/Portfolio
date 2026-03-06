@@ -30,14 +30,14 @@ const Navbar = () => {
              transition={{ duration: 0.3, ease: "easeInOut" }}
              >
 
-                <a href='#'
-                    className="flex items-center">
+                    <a href='#'
+                        className="flex items-center ">
 
                     <img src={logo} className="w-15" />
                 </a>
 
                 <ul
-                    className=" md:flex  items-center w-full ml-10 gap-5 mr-2">
+                    className=" md:flex justify-between items-center w-full ml-10 gap-5 mr-2">
                     <li>
                         <a href="#About"
                             className="btn-default"

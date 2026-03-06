@@ -70,7 +70,7 @@ const Experience = () => {
 
         <div className=" flex md:flex-row flex-col gap-12 space-y-4">
           {experiences.map((experience) => (
-            <div key={experience.id} className="flex w-full flex-col card-glass">
+            <div key={experience.id} className="flex w-full flex-col card-glass pointer-events-none md:pointer-events-auto">
 
               <div className="flex items-center">
                 <div className="ml-4">
