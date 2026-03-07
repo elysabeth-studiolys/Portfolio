@@ -15,13 +15,13 @@ export default function App() {
       {
         <Route path="/" element={
           <div>
-            <div className="p-5 md:px-[15%]">
+            <div className="p-5 md:px-[10%] flex justify-center">
               <Navbar />
               <Home />
             </div>
 
             <About />
-            <div className="p-5 md:px-[15%]">
+            <div className="p-5 md:px-[10%]">
               <Experience />
               <Projects />
             </div>
