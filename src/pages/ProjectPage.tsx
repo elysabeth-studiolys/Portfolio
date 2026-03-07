@@ -28,7 +28,7 @@ const ProjectPage = () => {
 
 
     return (
-        <section className="flex flex-col  items-center gap-8 my-12">
+        <section className="flex flex-col  items-center gap-8 mt-12">
             <div className=" flex flex-col gap-12  md:px-20 px-5 items-center md:mx-10">
 
                 <Link to="/" className="md:self-start md:-mb-15">

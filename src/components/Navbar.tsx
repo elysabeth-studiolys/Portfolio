@@ -22,7 +22,7 @@ const Navbar = () => {
 
     return (
         <motion.nav 
-        className="hidden z-99 md:flex nav-glass fixed top-5 w-2/3 items-center p-2 text-center"
+        className="hidden z-99 md:flex nav-glass fixed top-5 w-2/3 items-center p-2 text-center h-20"
         animate={{ 
             y: hidden ? -140 : 0,
             opacity: hidden ? 0 : 1,
@@ -37,7 +37,7 @@ const Navbar = () => {
                 </a>
 
                 <ul
-                    className=" md:flex justify-between items-center w-full ml-10 gap-5 mr-2">
+                    className=" md:flex justify-between items-center w-auto ml-auto gap-5 mr-2">
                     <li>
                         <a href="#About"
                             className="btn-default"
@@ -52,18 +52,12 @@ const Navbar = () => {
                             EXPÉRIENCES
                         </a>
                     </li>
+                    
                     <li>
-                        <a href="#Projects"
-                            className="btn-default"
-                        >
-                            DERNIERS PROJETS
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#Contact"
+                        <a href="#Projets"
                             className="btn-gradient"
                         >
-                            CONTACT
+                            DERNIERS PROJETS
                         </a>
                     </li>
 

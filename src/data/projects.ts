@@ -1,4 +1,4 @@
-import { Database, Gem, Rotate3d, Code, ToggleRight, ListChecks } from "lucide-react"
+import { MousePointerClick, Files, Variable, Database, Gem, Rotate3d, Code, ToggleRight, ListChecks, ChartColumn, Layers, Layers2, Thermometer, Sword, Camera, Play } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 import studiolys from '../assets/projects/studiolys-format.png'
@@ -8,7 +8,12 @@ import studiolys3 from '../assets/projects/studiolys-3.png'
 
 import serenity from '../assets/projects/serenity-format.png'
 
+import terminus from '../assets/projects/terminus-format.png'
+import terminus1 from '../assets/projects/temrinus-1.png'
+import terminus2 from '../assets/projects/terminus-2.png'
+import terminus3 from '../assets/projects/terminus-3.png'
 
+import scss from '../assets/projects/scss-format.webp'
 export type ProjectFeature = {
     title: string
     description: string
@@ -79,23 +84,94 @@ export const projects: Project[] =
                 {
                     title: "Suivi multi-modules",
                     description: "Modules bien-être, école, maison et projets regroupés dans une seule interface.",
-                    icon: ListChecks
+                    icon: Layers
 
                 },
                 {
-                    title: "Composants interactifs",
-                    description: "Formulaire de contact, tarification dynamique, carrousel de témoignages, modals.",
-                    icon: Database
+                    title: "Gestions des tâches & dépenses",
+                    description: "Suivi des tâches et dépenses avec filtrage par semaine.",
+                    icon: ListChecks
                 },
                 {
                     title: "Visualisation des données",
                     description: "Graphiques hebdomadaires pour suivre l'évolution et comparer les performances semaine après semaine.",
-                    icon: Database
+                    icon: ChartColumn
                 },
                 {
                     title: "Persistance locale",
                     description: "Données stockées localement via Hive sans dépendance serveur.",
                     icon: Database
+                },
+                
+            ]
+        },
+        {
+            slug: "terminus",
+            title: "Terminus",
+            subtitle: "Jeu de plateforme 2D basé sur des mécaniques de température",
+            longDescription: ["Jeu réalisé dans le cadre d'une Game Jam sous Unity en C#, où j'ai pris en charge le développement technique et le game design. Le concept repose sur des mécaniques de température comme moteur principal du gameplay : un système de valeurs dynamiques géré en code, qui conditionne en temps réel les actions, capacités et la survie du personnage.",
+                "Côté développement, le projet implique la conception d'un système de heat management custom, la gestion des états du joueur via des scripts C#, une IA ennemie réactive, ainsi qu'un système de combat et de détection au sol. La caméra dynamique est pilotée par Cinemachine, et l'ensemble des assets audio est géré via un AudioManager centralisé.",
+                "Un projet livré sous contrainte de temps (5 jours), de la mécanique de jeu jusqu'au déploiement WebGL sur itch.io — démontrant la capacité à architecturer, coder et shipper un produit fonctionnel rapidement."],
+            tech: ["Unity", "C#", "CineMachine", "WebGL"],
+            image: [terminus, terminus1, terminus2, terminus3],
+            github: 'https://github.com/elysabeth-studiolys/GameJam-Terminus',
+
+            features: [
+                {
+                    title: "Mécanique de température",
+                    description: "Système de chaleur/froid influençant directement le gameplay et l'état du joueur.",
+                    icon: Thermometer
+
+                },
+                {
+                    title: "Combat & IA ennemie",
+                    description: "Ennemis avec comportements autonomes et système de dommages.",
+                    icon: Sword
+                },
+                {
+                    title: "Caméra Cinemachine",
+                    description: "Suivi dynamique du joueur adapté aux niveaux 2D.",
+                    icon: Camera
+                },
+                {
+                    title: "Déploiement WebGL",
+                    description: "Jeu jouable directement dans le navigateur via itch.io.",
+                    icon: Play
+                },
+                
+            ]
+        },
+        {
+            slug: "css-to-scss",
+            title: "From CSS to SCSS",
+            subtitle: "Projet scolaire dans le cadre de l'apprentissage de SCSS",
+            longDescription: ["Projet scolaire réalisé dans le cadre d'un cours dédié à l'apprentissage de Dart Sass et SCSS. L'objectif : maîtriser les fondamentaux du préprocesseur et produire un CSS maintenable, structuré et scalable.",
+                "Le site est composé de quatre pages — accueil, à propos, équipe et contact — entièrement stylisées en SCSS et compilées via Dart Sass. L'architecture des fichiers Sass suit une organisation modulaire par composants, avec un système de variables globales et de mixins réutilisables pour garantir la cohérence du design.", "Quelques interactions dynamiques légères viennent compléter l'ensemble, gérées en JavaScript vanilla, sans dépendance externe."],
+            tech: ["HTML", "SCSS", "Dart Sass", "JavaScript"],
+            image: [scss],
+            github: 'https://github.com/elysabeth-studiolys/School-project-scss',
+
+            features: [
+                {
+                    title: "Architecture SCSS modulaire ",
+                    description: "Fichiers Sass organisés par composants et compilés via Dart Sass.",
+                    icon: Layers2
+
+                },
+                {
+                    title: "Variables & mixins",
+                    description: "Système de design cohérent à travers des variables globales et mixins réutilisables.",
+                    icon: Variable
+                },
+                {
+                    title: "Site multi-pages",
+                    description: "Navigation entre 4 pages HTML structurées sémantiquement.",
+                    icon: Files
+                },
+                {
+                    title: "Interactions JS",
+                    description: "Comportements dynamiques légers pilotés par un script vanilla.",
+                    icon: MousePointerClick
                 },
                 
             ]
