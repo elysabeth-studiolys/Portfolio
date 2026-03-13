@@ -54,7 +54,7 @@ const Navbar = () => {
                     </li>
                     
                     <li>
-                        <a href="#Projets"
+                        <a href="#Projects"
                             className="btn-gradient"
                         >
                             DERNIERS PROJETS

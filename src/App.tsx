@@ -6,11 +6,14 @@ import Navbar from "./components/Navbar";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop"
 
 import ProjectPage from "./pages/ProjectPage";
 
 export default function App() {
   return (
+    <>
+    <ScrollToTop /> 
     <Routes>
       {
         <Route path="/" element={
@@ -33,6 +36,7 @@ export default function App() {
         <Route path='/projects/:slug' element={<ProjectPage />} />
       }
     </Routes>
+    </>
   )
 
 }   
