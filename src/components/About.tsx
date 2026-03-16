@@ -30,7 +30,6 @@ const About = () => {
     return (
         <section className=" p-10 mb-10 md:mb-32 flex flex-col gap-15 justify-center text-center" id="About">
 
-            <img src={back} alt="" className="hidden md:flex absolute top-95 left-0 w-full h-full object-cover  -z-10" />
                 <Title title="À propos de moi" />
 
                 <p className="md:mx-20 md:text-xl">

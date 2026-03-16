@@ -93,12 +93,12 @@ const ProjectPage = () => {
                     <Github className="w-5" />
                 Voir sur GitHub
                 </a>
-                <Link to="/#projects" className="btn-gradient-border mt-4 flex items-center gap-1">
+                <Link to="/#Projects" className="btn-gradient-border mt-4 flex items-center gap-1">
                 Voir mes autres projets
                 </Link>
                 </div>
             </div>
-
+            
             <Footer />
         </section>
 
