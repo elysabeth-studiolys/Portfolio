@@ -1,4 +1,4 @@
-import { MousePointerClick, Files, Variable, Database, Gem, Rotate3d, Code, ToggleRight, ListChecks, ChartColumn, Layers, Layers2, Thermometer, Sword, Camera, Play } from "lucide-react"
+import { MousePointerClick, Files, Variable, Database, Gem, Rotate3d, Code, ToggleRight, ListChecks, ChartColumn, Layers, Layers2, Thermometer, Sword, Camera, Play, Server, Container, GitBranch } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 import studiolys from '../assets/projects/studiolys-format.png'
@@ -14,6 +14,9 @@ import terminus2 from '../assets/projects/terminus-2.png'
 import terminus3 from '../assets/projects/terminus-3.png'
 
 import scss from '../assets/projects/scss-format.webp'
+
+import dashboard from '../assets/projects/dashboard.png'
+
 export type ProjectFeature = {
     title: string
     description: string
@@ -173,6 +176,44 @@ export const projects: Project[] =
                     description: "Comportements dynamiques légers pilotés par un script vanilla.",
                     icon: MousePointerClick
                 },
+                
+            ]
+        },
+        {
+            slug: "dashboard",
+            title: "Dashboard gestion petites entreprises",
+            subtitle: "Application CRM fullstack — PHP, Angular & MySQL",
+            longDescription: [
+                "Application CRM fullstack développée de A à Z, permettant de gérer contacts, entreprises, deals et projets. L'architecture repose sur une séparation stricte backend/frontend : une API REST en PHP MVC expose des endpoints JSON consommés par un frontend Angular standalone.",
+                "Le backend suit le pattern MVC avec des classes Collection abstraites, des modèles typés PHP 8, des requêtes PDO préparées et des jointures SQL pour enrichir les données (nom du contact associé à un deal, entreprise liée). Le frontend Angular exploite les services, l'injection de dépendances, le routing, et la change detection manuelle pour garantir la réactivité des données.",
+                "L'ensemble est conteneurisé via Docker avec 3 images distinctes (MySQL, PHP, Angular/Nginx) orchestrées par Docker Compose. Un pipeline CI/CD GitHub Actions automatise le build et le déploiement à chaque push sur main."
+            ],
+
+            tech: ["Angular", "PHP", "MySQL", "Docker", "SCSS", "GitHub Actions"],
+            image: [dashboard],
+            github: 'https://github.com/elysabeth-studiolys/mini-crm-angular-php',
+
+            features: [
+                {
+                title: "API REST PHP MVC",
+                description: "Architecture MVC stricte avec routeur match(), modèles typés, PDO préparé et CORS configuré pour Angular.",
+                icon: Server
+                },
+                {
+                title: "Angular Standalone",
+                description: "Frontend Angular 21 avec services, HttpClient, routing, FormsModule et ChangeDetectorRef pour la réactivité.",
+                icon: Code
+                },
+                {
+                title: "Docker 3 conteneurs",
+                description: "Conteneurisation complète avec 3 images Docker (MySQL, PHP, Angular/Nginx) orchestrées via Docker Compose.",
+                icon: Container
+                },
+                {
+                title: "CI/CD GitHub Actions",
+                description: "Pipeline automatisé qui build et déploie l'application à chaque push sur la branche main.",
+                icon: GitBranch
+                }
                 
             ]
         },

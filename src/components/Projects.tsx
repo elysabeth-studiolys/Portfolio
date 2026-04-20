@@ -6,6 +6,7 @@ import app from '../assets/projects/app.jpg'
 import studiolys from '../assets/projects/studiolys.png'
 import gamejam from '../assets/projects/gamejam.webp'
 import scss from '../assets/projects/scss.webp'
+import dashboard from '../assets/projects/dashboard.png'
 
 import { Github, Eye } from "lucide-react";
 
@@ -19,6 +20,15 @@ const projects = [
         slug: 'serenity',
         repoLink: 'https://github.com/elysabeth-studiolys/studiolys-app',
         image: app,
+    },
+    {
+        id: 5,
+        title: "Dashboard pour petites entreprises",
+        description: "Projet scolaire développé dans le cadre de l'apprentissage des fondamentaux de SCSS et de l'architecture de style.",
+        technologies: ["Angular", "PHP", "MySQL"],
+        slug: "dashboard",
+        repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
+        image: dashboard,
     },
     {
         id: 4,
@@ -46,7 +56,8 @@ const projects = [
         slug: "css-to-scss",
         repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
         image: scss,
-    }
+    },
+    
 ]
 
 const Projects = () => {
