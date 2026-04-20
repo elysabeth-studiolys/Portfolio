@@ -15,7 +15,7 @@ import terminus3 from '../assets/projects/terminus-3.png'
 
 import scss from '../assets/projects/scss-format.webp'
 
-import dashboard from '../assets/projects/dashboard.png'
+import dashboard from '../assets/projects/dashboard.webp'
 
 export type ProjectFeature = {
     title: string

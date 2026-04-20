@@ -6,7 +6,7 @@ import app from '../assets/projects/app.jpg'
 import studiolys from '../assets/projects/studiolys.png'
 import gamejam from '../assets/projects/gamejam.webp'
 import scss from '../assets/projects/scss.webp'
-import dashboard from '../assets/projects/dashboard.png'
+import dashboard from '../assets/projects/dashboard.webp'
 
 import { Github, Eye } from "lucide-react";
 
