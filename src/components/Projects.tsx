@@ -24,7 +24,7 @@ const projects = [
     {
         id: 5,
         title: "Dashboard pour petites entreprises",
-        description: "Projet scolaire développé dans le cadre de l'apprentissage des fondamentaux de SCSS et de l'architecture de style.",
+        description: "Application CRM fullstack développée de A à Z, permettant de gérer contacts, entreprises, ventes et projets.",
         technologies: ["Angular", "PHP", "MySQL"],
         slug: "dashboard",
         repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',

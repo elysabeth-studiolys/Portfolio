@@ -184,7 +184,7 @@ export const projects: Project[] =
             title: "Dashboard gestion petites entreprises",
             subtitle: "Application CRM fullstack — PHP, Angular & MySQL",
             longDescription: [
-                "Application CRM fullstack développée de A à Z, permettant de gérer contacts, entreprises, deals et projets. L'architecture repose sur une séparation stricte backend/frontend : une API REST en PHP MVC expose des endpoints JSON consommés par un frontend Angular standalone.",
+                "Application CRM fullstack développée de A à Z, permettant de gérer contacts, entreprises, ventes et projets. L'architecture repose sur une séparation stricte backend/frontend : une API REST en PHP MVC expose des endpoints JSON consommés par un frontend Angular standalone.",
                 "Le backend suit le pattern MVC avec des classes Collection abstraites, des modèles typés PHP 8, des requêtes PDO préparées et des jointures SQL pour enrichir les données (nom du contact associé à un deal, entreprise liée). Le frontend Angular exploite les services, l'injection de dépendances, le routing, et la change detection manuelle pour garantir la réactivité des données.",
                 "L'ensemble est conteneurisé via Docker avec 3 images distinctes (MySQL, PHP, Angular/Nginx) orchestrées par Docker Compose. Un pipeline CI/CD GitHub Actions automatise le build et le déploiement à chaque push sur main."
             ],
