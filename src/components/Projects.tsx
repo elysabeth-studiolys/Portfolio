@@ -23,6 +23,15 @@ const projects = [
         image: app,
     },
     {
+        id: 6,
+        title: "StudioGaming",
+        description: "Forum intéractif de jeux vidéo, d'actualités et de vérification de setup gaming.",
+        technologies: ["Symfony", "MySQL", "React"],
+        slug: "studiogaming",
+        repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
+        image: studiogaming,
+    },
+    {
         id: 5,
         title: "Dashboard pour petites entreprises",
         description: "Application CRM fullstack développée de A à Z, permettant de gérer contacts, entreprises, ventes et projets.",
@@ -58,58 +67,50 @@ const projects = [
         repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
         image: scss,
     },
-     {
-        id: 4,
-        title: "StudioGaming",
-        description: "Forum intéractif de jeux vidéo, d'actualités et de vérification de setup gaming.",
-        technologies: ["Symfony", "MySQL", "React"],
-        slug: "studiogaming",
-        repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
-        image: studiogaming,
-    },
-    
+
+
 ]
 
 const Projects = () => {
-  return (
-    
-    <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
-      <Title title="Derniers Projets" />
-      <div className="grid md:grid-cols-3 gap-12">
-        {projects.map((project) => (
-            <div key={project.id}className="card-glass-mobile h-full ">
-                <img src={project.image} alt={project.title} className="w-full rounded-xl h-56 object-cover" />
-                <div>
-                    <h2 className="my-2 font-bold">
-                        {project.title}
-                    </h2>
-                    <p className="text-sm">{project.description}</p>
-                </div>
+    return (
 
-                <div className="flex flex-wrap gap-2 my-3">
-                    {project.technologies.map((tech) => (
-                        <span className="badge badge-accent badge-sm">
-                            {tech}
-                        </span>
-                    ))}
-                </div>
-                <div className="flex gap-2 ">
-                    <Link className="btn  btn-accent w-1/3 " to={`/projects/${project.slug}`}>
-                        <Eye className="w-4" />
-                        Voir
-                        
-                    </Link>
-                    <a className="btn btn-soft btn-accent  w-2/3" href={project.repoLink}>
-                        <Github className="w-4" />
-                        GitHub
-                        
-                    </a>
-                </div>
+        <div className="mt-10 flex flex-col gap-20 mb-50" id="Projects">
+            <Title title="Derniers Projets" />
+            <div className="grid md:grid-cols-3 gap-12">
+                {projects.map((project) => (
+                    <div key={project.id} className="card-glass-mobile h-full ">
+                        <img src={project.image} alt={project.title} className="w-full rounded-xl h-56 object-cover" />
+                        <div>
+                            <h2 className="my-2 font-bold">
+                                {project.title}
+                            </h2>
+                            <p className="text-sm">{project.description}</p>
+                        </div>
+
+                        <div className="flex flex-wrap gap-2 my-3">
+                            {project.technologies.map((tech) => (
+                                <span className="badge badge-accent badge-sm">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <div className="flex gap-2 ">
+                            <Link className="btn  btn-accent w-1/3 " to={`/projects/${project.slug}`}>
+                                <Eye className="w-4" />
+                                Voir
+
+                            </Link>
+                            <a className="btn btn-soft btn-accent  w-2/3" href={project.repoLink}>
+                                <Github className="w-4" />
+                                GitHub
+
+                            </a>
+                        </div>
+                    </div>
+                ))}
             </div>
-        ))}
-      </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Projects
