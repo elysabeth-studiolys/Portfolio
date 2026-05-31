@@ -1,4 +1,4 @@
-import { MousePointerClick, Files, Variable, Database, Gem, Rotate3d, Code, ToggleRight, ListChecks, ChartColumn, Layers, Layers2, Thermometer, Sword, Camera, Play, Server, Container, GitBranch } from "lucide-react"
+import { MousePointerClick, Files, Variable, Database, Gem, Rotate3d, Code, ToggleRight, ListChecks, ChartColumn, Layers, Layers2, Thermometer, Sword, Camera, Play, Server, Container, GitBranch, Cpu, Library, TextInitial, UserKey  } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 
 import studiolys from '../assets/projects/studiolys-format.png'
@@ -13,6 +13,13 @@ import terminus1 from '../assets/projects/temrinus-1.png'
 import terminus2 from '../assets/projects/terminus-2.png'
 import terminus3 from '../assets/projects/terminus-3.png'
 
+import studiogaming from '../assets/projects/studiogaming-14.webp'
+import studiogaming1 from '../assets/projects/studiogaming-12.webp'
+import studiogaming2 from '../assets/projects/studiogaming-15.webp'
+import studiogaming3 from '../assets/projects/studiogaming-13.webp'
+
+
+
 import scss from '../assets/projects/scss-format.webp'
 
 import dashboard from '../assets/projects/dashboard.webp'
@@ -26,10 +33,10 @@ export type Project = {
     slug: string
     title: string
     subtitle: string
-    longDescription: string []
+    longDescription: string[]
     tech: string[]
     features?: ProjectFeature[]
-    image: string []
+    image: string[]
     github?: string
 }
 
@@ -40,7 +47,7 @@ export const projects: Project[] =
             title: "Studio Lys",
             subtitle: "Site web de freelance",
             longDescription: ["Site vitrine personnel développé de A à Z pour présenter l'activité freelance de Studio Lys. Conçu comme une landing page moderne, il reflète autant une identité visuelle soignée qu'un savoir-faire technique affirmé. ",
-                "L'interface mise sur un rendu premium avec des effets de glassmorphism, des dégradés maîtrisés et des animations fluides pilotées par Framer Motion — notamment une navbar responsive qui se masque au scroll. L'architecture adopte une approche data-driven : les contenus (services, témoignages, tarifs) sont centralisés dans des fichiers de données typés via des interfaces TypeScript, ce qui facilite la maintenabilité et l'évolution du site.", 
+                "L'interface mise sur un rendu premium avec des effets de glassmorphism, des dégradés maîtrisés et des animations fluides pilotées par Framer Motion — notamment une navbar responsive qui se masque au scroll. L'architecture adopte une approche data-driven : les contenus (services, témoignages, tarifs) sont centralisés dans des fichiers de données typés via des interfaces TypeScript, ce qui facilite la maintenabilité et l'évolution du site.",
                 "Côté fonctionnalités, le site intègre un formulaire de contact connecté à un service d'envoi d'e-mails, un composant de tarification interactif, un carrousel de témoignages avec notation par étoiles, ainsi qu'un système de modals. Le suivi des performances est assuré via Google Analytics 4."
             ],
             tech: ["React", "Tailwind CSS", "TypeScript", "Framer Motion", "Next.js (App Router)"],
@@ -76,7 +83,7 @@ export const projects: Project[] =
             title: "Serenity",
             subtitle: "Application mobile de suivi personnel",
             longDescription: ["Application mobile de suivi personnel développée avec Flutter, conçue pour centraliser la gestion du quotidien en un seul outil. Organisée autour de quatre modules — bien-être, école, maison et projets — elle offre une vue d'ensemble claire sur les différentes sphères de la vie quotidienne depuis une interface unifiée.",
-                "Le projet repose sur une clean architecture avec pattern repository, séparant strictement la logique métier de l'UI. La gestion d'état est assurée par Riverpod, la persistance locale par Hive — sans dépendance serveur, les données restent disponibles hors ligne.", 
+                "Le projet repose sur une clean architecture avec pattern repository, séparant strictement la logique métier de l'UI. La gestion d'état est assurée par Riverpod, la persistance locale par Hive — sans dépendance serveur, les données restent disponibles hors ligne.",
                 "Chaque module embarque ses propres fonctionnalités : suivi des tâches et dépenses avec filtrage par semaine, gestion des habitudes et indicateurs de bien-être, suivi de projets personnels. L'architecture découplée permet à chaque module d'évoluer indépendamment."
             ],
             tech: ["Flutter · Dart", "Riverpod", "Hive", "Clean Architecture"],
@@ -105,7 +112,7 @@ export const projects: Project[] =
                     description: "Données stockées localement via Hive sans dépendance serveur.",
                     icon: Database
                 },
-                
+
             ]
         },
         {
@@ -141,7 +148,7 @@ export const projects: Project[] =
                     description: "Jeu jouable directement dans le navigateur via itch.io.",
                     icon: Play
                 },
-                
+
             ]
         },
         {
@@ -176,7 +183,7 @@ export const projects: Project[] =
                     description: "Comportements dynamiques légers pilotés par un script vanilla.",
                     icon: MousePointerClick
                 },
-                
+
             ]
         },
         {
@@ -195,26 +202,64 @@ export const projects: Project[] =
 
             features: [
                 {
-                title: "API REST PHP MVC",
-                description: "Architecture MVC stricte avec routeur match(), modèles typés, PDO préparé et CORS configuré pour Angular.",
-                icon: Server
+                    title: "API REST PHP MVC",
+                    description: "Architecture MVC stricte avec routeur match(), modèles typés, PDO préparé et CORS configuré pour Angular.",
+                    icon: Server
                 },
                 {
-                title: "Angular Standalone",
-                description: "Frontend Angular 21 avec services, HttpClient, routing, FormsModule et ChangeDetectorRef pour la réactivité.",
-                icon: Code
+                    title: "Angular Standalone",
+                    description: "Frontend Angular 21 avec services, HttpClient, routing, FormsModule et ChangeDetectorRef pour la réactivité.",
+                    icon: Code
                 },
                 {
-                title: "Docker 3 conteneurs",
-                description: "Conteneurisation complète avec 3 images Docker (MySQL, PHP, Angular/Nginx) orchestrées via Docker Compose.",
-                icon: Container
+                    title: "Docker 3 conteneurs",
+                    description: "Conteneurisation complète avec 3 images Docker (MySQL, PHP, Angular/Nginx) orchestrées via Docker Compose.",
+                    icon: Container
                 },
                 {
-                title: "CI/CD GitHub Actions",
-                description: "Pipeline automatisé qui build et déploie l'application à chaque push sur la branche main.",
-                icon: GitBranch
+                    title: "CI/CD GitHub Actions",
+                    description: "Pipeline automatisé qui build et déploie l'application à chaque push sur la branche main.",
+                    icon: GitBranch
                 }
-                
+
+            ]
+        },
+        {
+            slug: "studiogaming",
+            title: "StudioGaming",
+            subtitle: "Forum de jeux vidéo & vérification de setup Gaming",
+            longDescription: [
+                "Studio Gaming est une plateforme communautaire dédiée aux joueurs PC, conçue et développée en solo dans le cadre de ma formation en développement web et mobile. Le projet couvre l'intégralité du cycle de développement, de la modélisation de la base de données à la mise en production d'une API REST, jusqu'à la construction d'une interface React consommant cette API.",
+                "L'architecture choisie repose sur une séparation stricte entre le back-end Symfony — exposant une API stateless sécurisée par JWT — et le front-end React, organisé en composants réutilisables avec une charte graphique cohérente. Cette approche reflète les standards actuels du développement en entreprise, où front et back évoluent indépendamment.",            
+                "Au-delà des aspects techniques, Studio Gaming intègre des fonctionnalités pensées pour l'expérience utilisateur : un système de vérification de compatibilité matérielle basé sur des listes de composants ordonnées par performance, une collection personnalisable avec statuts de progression, un système d'avis communautaires et un blog éditorial. Le projet a également été mené en équipe pour les fonctionnalités jeux, impliquant une gestion de branches Git et une base de données partagée en cloud.",
+            ],
+
+            tech: ["Symfony 7", "MySQL", "JWT", "React", "Axios", "Markdown"],
+            image: [studiogaming, studiogaming1, studiogaming2, studiogaming3],
+            github: 'https://github.com/elysabeth-studiolys/mini-crm-angular-php',
+
+            features: [
+                {
+                    title: "Vérification de compatibilité setup",
+                    description: "L'Algorithme de comparaison par index de performance qui détermine si la configuration matérielle de l'utilisateur peut faire tourner un jeu donné.",
+                    icon: Cpu
+                },
+                {
+                    title: "Bibliothèque personnelle",
+                    description: "Système de collection permettant d'ajouter des jeux, gérer leur statut de progression et laisser des avis notés consultables par la communauté.",
+                    icon: Library
+                },
+                {
+                    title: "Blog Markdown",
+                    description: "Espace éditorial admin avec rendu côté client via react-markdown et remark-gfm pour des articles enrichis stockés en base de données.",
+                    icon: TextInitial
+                },
+                {
+                    title: "Authentification JWT & rôles",
+                    description: "Sécurisation complète de l'API Symfony avec tokens JWT, gestion des rôles ROLE_USER / ROLE_ADMIN et protection des routes côté React.",
+                    icon: UserKey
+                }
+
             ]
         },
 

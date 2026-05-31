@@ -7,6 +7,7 @@ import studiolys from '../assets/projects/studiolys.png'
 import gamejam from '../assets/projects/gamejam.webp'
 import scss from '../assets/projects/scss.webp'
 import dashboard from '../assets/projects/dashboard.webp'
+import studiogaming from '../assets/projects/studiogaming-mockup.webp'
 
 import { Github, Eye } from "lucide-react";
 
@@ -56,6 +57,15 @@ const projects = [
         slug: "css-to-scss",
         repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
         image: scss,
+    },
+     {
+        id: 4,
+        title: "StudioGaming",
+        description: "Forum intéractif de jeux vidéo, d'actualités et de vérification de setup gaming.",
+        technologies: ["Symfony", "MySQL", "React"],
+        slug: "studiogaming",
+        repoLink: 'https://github.com/elysabeth-studiolys/School-project-scss',
+        image: studiogaming,
     },
     
 ]
