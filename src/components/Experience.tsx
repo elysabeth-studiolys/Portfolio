@@ -1,9 +1,9 @@
 import Title from "./Title"
 
-import imgHTML from "../assets/techno/html.png"
-import imgCSS from "../assets/techno/css.png"
+import imgAngular from "../assets/techno/angular.jpg"
+import imgSymfony from "../assets/techno/symfony.svg"
 import imgREACT from "../assets/techno/react.png"
-import imgTYPESCRIPT from "../assets/techno/typescript.svg"
+import imgSCSS from "../assets/techno/scss.png"
 import imgGIT from "../assets/techno/github.png"
 import imgFLUTTER from "../assets/techno/flutter.webp"
 
@@ -11,10 +11,10 @@ import imgFLUTTER from "../assets/techno/flutter.webp"
 
 
 const skills = [
-  { id: 1, name: "HTML", image: imgHTML },
-  { id: 2, name: "CSS", image: imgCSS },
+  { id: 1, name: "Angular", image: imgAngular },
+  { id: 2, name: "Symfony", image: imgSymfony },
   { id: 4, name: "React", image: imgREACT },
-  { id: 8, name: "TypeScript", image: imgTYPESCRIPT },
+  { id: 8, name: "SCSS", image: imgSCSS },
   { id: 7, name: "Git", image: imgGIT },
   { id: 3, name: "Flutter", image: imgFLUTTER },
  
@@ -23,9 +23,17 @@ const skills = [
 const experiences = [
   {
     id: 1,
+    role: "Développeuse FrontEnd Design System",
+    company: "SeqOne",
+    period: "Present",
+    description: ["Implémentation et maintenance de composants Angular", "Documentation et tests des composants livrés.", "L’exploration et l’intégration d’outils IA pour fluidifier la collaboration design/dev"],
+    image: imgGIT
+  },
+  {
+    id: 1,
     role: "Chargée de communication",
     company: "MissionDigitale",
-    period: "Sept 2025 - Present",
+    period: "Sept 2025 - Avril 2026",
     description: ["Création de templates Figma pour l'entreprise.", "Gestion de reseaux sociaux.", "Création d'outils de calcul de prix interactifs en JavaScript."],
     image: imgGIT
   },
@@ -37,15 +45,6 @@ const experiences = [
     description: ["Design et développement de site web pour freelancer & petites entreprises.", "Conception d'interfaces réactives et centrées sur l’utilisateur (UX/UI).","Développement d'applications cross-platform","Création d'identités visuelles pour des produits numériques"],
     image: imgGIT
   },
-  {
-    id: 2,
-    role: "Graphic & webdesigner",
-    company: "La Folie des Senteurs",
-    period: "2024-2025",
-    description: ["Création d'illustrations personnalisées pour les produits.", "Refonte et optimisation de la boutique en ligne pour améliorer l'expérience utilisateur et la cohérence visuelle.","Refonte du SEO pour améliorer la visibilité sur les moteurs de recherche et le trafic organique"],
-    image: imgGIT
-  },
-  
 ]
 
 const Experience = () => {
@@ -68,7 +67,7 @@ const Experience = () => {
 
         </div>
 
-        <div className=" flex md:flex-row flex-col gap-12 space-y-4">
+        <div className=" flex md:grid-cols-3 md:grid flex-col gap-12 space-y-4">
           {experiences.map((experience) => (
             <div key={experience.id} className="flex w-full flex-col card-glass pointer-events-none md:pointer-events-auto">
 

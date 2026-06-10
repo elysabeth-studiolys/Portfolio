@@ -26,9 +26,9 @@ const Home = () => {
                 </span>
 
                 <p className="my-4 text-xl text-center md:text-left">
-                    Développeuse web et mobile junior,
-                    <br /> à la recherche de mon <span className="font-bold text-accent">alternance</span> pour
-                    <br />l'année 2026-2027
+                    Développeuse web et mobile en alternance,
+                    <br /> je développe également mon activité via <span className="font-bold text-accent"> StudioLys</span> 
+                    
                 </p>
                 <div className="flex space-x-4">
                     <a href="#Projects" className="btn gradient-brand w-fit">

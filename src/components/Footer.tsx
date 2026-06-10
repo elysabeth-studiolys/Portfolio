@@ -13,7 +13,7 @@ const Footer = () => {
                 <p className="font-bold">
                     Elysabeth.
                     <br />
-                    Étudiante à la recherche de son alternance 2026/2027.
+                    Étudiante en alternance chez SeqOne.
                 </p>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
             </aside>
